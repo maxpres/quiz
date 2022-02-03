@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="homebox">
+        <h2>Instruction</h2>
+        <p>
+          Total number of questions: <span class="number-of-questions"></span>
+        </p>
+
+        <div class="btn-box">
+          <button type="button" class="btn" onclick="startQuiz()">
+            Start quiz!
+          </button>
+          <button
+            type="button"
+            class="btn btnHighScore hide"
+            onclick="viewHighScores()"
+          >
+            View High Scores
+          </button>
+        </div>
+      </div>
+
+      <div class="quizbox hide">
+        <div class="numberquestion">1 of 5 questions</div>
+        <div class="question-container">
+          <div class="question"></div>
+          <div class="optionContainer"></div>
+          <div class="btn-next">
+            <button type="button" class="nextBtn" onclick="getNewQuestion()">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="resultBox hide">
+          <table>
+            <tr>
+              <td>Total Question</td>
+              <td><p class="total-question"></p></td>
+            </tr>
+            <tr>
+              <td>Attempt</td>
+              <td><p class="total-attempt"></p></td>
+            </tr>
+            <tr>
+              <td>Correct</td>
+              <td><p class="total-correct"></p></td>
+            </tr>
+            <tr>
+              <td>Wrong</td>
+              <td><p class="total-wrong"></p></td>
+            </tr>
+            <tr>
+              <td>Percentage</td>
+              <td><p class="percentage"></p></td>
+            </tr>
+            <tr>
+              <td>Your Total Score</td>
+              <td><p class="total-score"></p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="my-answers"></div>
+
+        <div class="saveScore hide">
+          <div>
+            <label for="username">Name:</label>
+            <input
+              type="text"
+              class="username"
+              name="username"
+              id="username"
+              placeholder="Enter your name.."
+            />
+          </div>
+
+          <button
+            class="save-btn"
+            disabled
+            type="submit"
+            onclick="saveHighScore(event)"
+          >
+            Save score!
+          </button>
+        </div>
+
+        <button class="goBackHome hide" onclick="goBackHome()">
+          Go back home
+        </button>
+
+        <button
+          type="button"
+          class="btn btnHighScore hide"
+          onclick="viewHighScores()"
+        >
+          View High Scores
+        </button>
+        <button
+          type="button"
+          class="viewResult hide"
+          onclick="removeQuestionContainer(), res()"
+        >
+          View Result
+        </button>
+      </div>
+      <div class="highScoresContainer hide">
+        <h1 class="hs">High Scores</h1>
+        <ul class="highScoresList"></ul>
+        <button class="goBackHome" onclick="goBackHome()">Go back home!</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
