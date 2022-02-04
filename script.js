@@ -233,7 +233,7 @@ function resetQuiz() {
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const maxHighScores = 10;
 const username = document.getElementById("username");
-const save = document.querySelector(".save");
+const save = document.querySelector(".save-btn");
 const highScoresList = document.querySelector(".highScoresList");
 const highScoresContainer = document.querySelector(".highScoresContainer");
 const saveScore = document.querySelector(".saveScore");
@@ -263,7 +263,7 @@ function saveHighScore(e) {
 
 highScoresList.innerHTML = highScores
   .map((scoreHighScore) => {
-    return `<li class="liEl">
+    return `<li class="li">
       ${scoreHighScore.name}    ${scoreHighScore.score} Points
     </li>`;
   })

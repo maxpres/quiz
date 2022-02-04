@@ -167,7 +167,7 @@ span {
 
 span.correct,
 span.wrong {
-  background-image: url("img/right.png");
+  background-image: url("src/img/right.png");
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ span.wrong {
 }
 
 span.wrong {
-  background-image: url("img/wrong.png");
+  background-image: url("src/img/wrong.png");
 }
 
 .goBackHome {
@@ -186,7 +186,7 @@ span.wrong {
   width: 150px;
   cursor: pointer;
   font-weight: 600;
-  margin: 0px 0px 10px 0px;
+  margin: 20px 0px;
 }
 
 .goBackHome.hide {
@@ -195,6 +195,11 @@ span.wrong {
 
 .my-answers.hide {
   display: none;
+}
+
+.li {
+  list-style-type: none;
+  padding: 5px;
 }
 
 .goBackHome:hover {
