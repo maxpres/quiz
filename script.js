@@ -2,27 +2,27 @@
 
 const quiz = [
   {
-    q: "Aus wievielen Inseln besteht Indonesien ?",
+    q: "Auf wieviele Inseln verteilt sich Indonesien ?",
     options: ["17.000", "7.000", "23.000", "4.000"],
     answer: 0,
   },
   {
-    q: "Die giftigste Schlange der Welt ist ...",
-    options: ["Braunschlange", "Kobra", "Inlandtaipan", "Seeschlange"],
+    q: "Die giftigste Schlange der Welt ist die/der ...",
+    options: ["Braunschlange", "Python", "Inlandtaipan", "Seeschlange"],
     answer: 2,
   },
   {
-    q: "'Rows' sind eine Übung für",
-    options: ["Brust", "Beine", "Rücken", "Schultern"],
-    answer: 2,
+    q: "Wie oft gewann Deutschland die Fußball-Weltweisterschaft?",
+    options: ["4x", "5x", "6x", "7x"],
+    answer: 0,
   },
   {
-    q: "Lieber 0,01€ 30 Tage lang verdoppeln oder 5 Mio € direkt auf die Hand?",
+    q: "Lieber 0,01€ 30 Tage lang verdoppeln oder 3 Mio € direkt auf die Hand?",
     options: ["Verdoppeln", "Direkt 5 Mio €"],
     answer: 0,
   },
   {
-    q: "Wie schnell fliegt ein Flugzeug?",
+    q: "Wie schnell fliegt ein Flugzeug durchschnittlich?",
     options: ["600 km/h", "900 km/h", "1400 km/h", "1800 km/h"],
     answer: 1,
   },
@@ -32,7 +32,7 @@ const quiz = [
     answer: 1,
   },
   {
-    q: "In welchem Land leben mehr Menschen?",
+    q: "Welches dieser Länder hat die meisten Einwohner?",
     options: ["Australien", "Holland", "Belgien", "Polen"],
     answer: 3,
   },
@@ -43,7 +43,12 @@ const quiz = [
   },
   {
     q: "Welcher Ozean liegt zwischen Europa und Amerika?",
-    options: ["Indischer Ozean", "Pazifischer Ozean", "Atlantischer Ozean"],
+    options: [
+      "Indischer Ozean",
+      "Pazifischer Ozean",
+      "Atlantischer Ozean",
+      "Arktischer Ozean",
+    ],
     answer: 2,
   },
   {
