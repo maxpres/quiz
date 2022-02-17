@@ -87,7 +87,7 @@ let score = 0;
 let scoreWrong = 0;
 let attempt = 0;
 
-noq.innerText = totalQuestion; //5
+noq.innerText = totalQuestion;
 
 for (let i = 0; i < quiz.length; i++) {
   availablequestions.push(quiz[i]);
@@ -223,7 +223,7 @@ function goBackHome() {
   btnNext.classList.remove("hide");
   highScoresContainer.classList.add("hide");
   saveScore.classList.add("hide");
-  noq.innerText = totalQuestion; //5
+  noq.innerText = totalQuestion;
   resetQuiz();
 }
 
@@ -248,7 +248,6 @@ username.addEventListener("keyup", () => {
 });
 
 function saveHighScore(e) {
-  console.log("cwedcw");
   e.preventDefault();
 
   const scoreHighScore = {
