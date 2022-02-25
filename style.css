@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   background-color: rgba(238, 223, 206, 0.623);
 }
 
@@ -153,6 +153,10 @@ label {
   flex-wrap: wrap;
 }
 
+.already-answered {
+  pointer-events: none;
+}
+
 span {
   width: 40px;
   height: 40px;
@@ -167,7 +171,7 @@ span {
 
 span.correct,
 span.wrong {
-  background-image: url("src/img/right.png");
+  background-image: url('src/img/right.png');
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +179,7 @@ span.wrong {
 }
 
 span.wrong {
-  background-image: url("src/img/wrong.png");
+  background-image: url('src/img/wrong.png');
 }
 
 .goBackHome {
