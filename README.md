@@ -1,3 +1,3 @@
 # Quiz App
 
-This application is a quiz app with 10 questions that can also save your final result in a highscore list. The number of correctly or incorrectly answered questions or the number of skipped questions can be seen in a summary at the end of the quiz.
+Train your brain- A quiz created to screen your common sense. Your score and whether you could beat other participants, you will find out after you answered the last question. Good luck!
