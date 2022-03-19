@@ -18,7 +18,7 @@ const quiz = [
   },
   {
     q: 'Lieber 0,01€ 30 Tage lang verdoppeln oder 3 Mio € direkt auf die Hand?',
-    options: ['Verdoppeln', 'Direkt 5 Mio €'],
+    options: ['Verdoppeln', 'Direkt 3 Mio €'],
     answer: 0,
   },
   {
